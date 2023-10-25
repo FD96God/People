@@ -1,11 +1,10 @@
 fun main() {
-    val likes = 50
+    val likes = 101
     val end = likes % 10
-    if (end == 0) {
-        println("Понравилось $likes человек")
-    } else if (end == 1) {
-        println("Понравилось $likes человеку")
-    } else {
+    val exception = likes % 100
+    if (exception == 11 || end != 1) {
         println("Понравилось $likes людям")
+    } else {
+        println("Понравилось $likes человеку")
     }
 }
