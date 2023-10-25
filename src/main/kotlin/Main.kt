@@ -1,5 +1,5 @@
 fun main() {
-    val likes = 101
+    val likes = 111
     val end = likes % 10
     val exception = likes % 100
     if (exception == 11 || end != 1) {
